@@ -1,14 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background: linear-gradient(to bottom, #88BDBC, #3e5756 100%);
 }
 
-#mostrar{
-    margin-top: 20px;
+.cabecalho {
+    background-color: #527675;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    z-index: 1000;
+    position: sticky;
+}
+
+.entrar {
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+    padding: 20px 20px;
+    margin-left: auto; /* Move o link para a direita */
+}
+
+.registro {
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+    padding: 20px 20px;
+}
+
+#mostrar {
+    margin-top: 80px; /* Adicione margem para não ficar atrás do cabeçalho */
     padding: 10px 20px;
     font-size: 16px;
     background-color: #88bdbc;
@@ -18,6 +45,7 @@ body {
     cursor: pointer;
     align-self: center;
 }
+
 .container {
     position: relative;
     margin: 20px;
@@ -35,9 +63,9 @@ body {
     font-family: 'Great Vibes', cursive;
     font-size: 5vh;
     position: absolute;
-    top: 40%; /*Posição vertical*/
-    left: 50%; /*Posição horizontal*/
-    transform: translate(-50%, -50%); /*Centraliza o texto*/
+    top: 40%; /* Posição vertical */
+    left: 50%; /* Posição horizontal */
+    transform: translate(-50%, -50%); /* Centraliza o texto */
     color: #88bdbc;
 }
 
@@ -50,7 +78,7 @@ body {
     font-size: 24px;
     color: black;
     cursor: pointer;
-    z-index: 10; /*Garante que o botão fique sobre a imagem*/
+    z-index: 10; /* Garante que o botão fique sobre a imagem */
 }
 
 #gerarPdf {
@@ -63,4 +91,4 @@ body {
     border-radius: 5px;
     cursor: pointer;
     align-self: center;
-} 
+}
