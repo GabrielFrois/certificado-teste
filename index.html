@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar PDF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <button id="mostrar">Mostrar Certificado</button>
+
+    <div id="container" class="container" style="display: none;">
+        <button id="fechar" class="fechar">X</button>
+        <img id="minhaImagem" src="/src/Certificado.png" alt="Imagem"/>
+        <div id="texto" class="texto">Seu Nome</div>
+        <button id="gerarPdf">Gerar PDF</button>
+    </div>
+
+    <script src="/src/script.js"></script>
+</body>
+</html>

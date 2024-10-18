@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#mostrar{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #88bdbc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+.container {
+    position: relative;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#minhaImagem {
+    width: 600px;
+    display: block;
+}
+
+.texto {
+    font-family: 'Great Vibes', cursive;
+    font-size: 5vh;
+    position: absolute;
+    top: 40%; /*Posição vertical*/
+    left: 50%; /*Posição horizontal*/
+    transform: translate(-50%, -50%); /*Centraliza o texto*/
+    color: #88bdbc;
+}
+
+.fechar {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    z-index: 10; /*Garante que o botão fique sobre a imagem*/
+}
+
+#gerarPdf {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #88bdbc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+} 
